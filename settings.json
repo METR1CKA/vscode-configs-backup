@@ -1,0 +1,157 @@
+{
+  // JetBrainsMono, CaskaydiaCove, Hasklug, FiraCode, FantasqueSansMono
+  // GohuFont uni14, Agave, Lilex, ProFont IIx, ProFontWindows
+  // 'Monaspace Neon', 'Monaspace Argon', 'Monaspace Xenon', 'Monaspace Radon', 'Monaspace Krypton'
+  // ------------------------------- EDITOR CONFIG -------------------------------
+  "editor.fontFamily": "'Monaspace Argon Medium', JetBrainsMono Nerd Font",
+  "editor.fontSize": 14,
+  "editor.lineHeight": 1.7,
+  "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'calt', 'dlig'",
+  "editor.wordWrap": "on",
+  "editor.smoothScrolling": true,
+  "editor.tabSize": 2,
+  "editor.cursorBlinking": "expand",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.autoClosingBrackets": "always",
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.guides.bracketPairs": true,
+  "editor.guides.bracketPairsHorizontal": true,
+  "editor.linkedEditing": true,
+  "editor.accessibilitySupport": "on",
+  "editor.renderWhitespace": "all",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.stickyScroll.enabled": true,
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.vertical": "hidden",
+  "editor.renderLineHighlight": "all",
+  // ------------------------------- WORKBENCH CONFIG -------------------------------
+  "workbench.startupEditor": "none",
+  "workbench.iconTheme": "eq-material-theme-icons-light",
+  "workbench.list.smoothScrolling": true,
+  "workbench.productIconTheme": "fluent-icons-fork",
+  "workbench.preferredDarkColorTheme": "One Dark Darker",
+  "workbench.tree.renderIndentGuides": "always",
+  "workbench.sideBar.location": "right",
+  "workbench.activityBar.location": "top",
+  "workbench.colorTheme": "One Dark Darker",
+  // "workbench.statusBar.visible": false,
+  // "editor.minimap.enabled": false,
+  "workbench.tree.enableStickyScroll": true,
+  "workbench.colorCustomizations": {},
+  "workbench.editorAssociations": {
+    "*.pdf": "latex-workshop-pdf-hook",
+    "*.docx": "default"
+  },
+  // ------------------------------- EXPLORER CONFIG -------------------------------
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.compactFolders": false,
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "*.ts": "${capture}.js",
+    "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+    "ace": "ace*",
+    "tsconfig.json": "tsconfig*",
+    "package.json": "package*, yarn*, pnpm*",
+    ".env": ".env*",
+  },
+  // ------------------------------- TERMINAL CONFIG -------------------------------
+  "terminal.integrated.fontFamily": "GohuFont uni14 Nerd Font, JetBrainsMono Nerd Font",
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyleInactive": "line",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.env.windows": {},
+  "terminal.integrated.env.linux": {},
+  "terminal.integrated.env.osx": {},
+  // ------------------------------- AUDIOCUES CONFIG -------------------------------
+  "audioCues.lineHasError": "off",
+  "audioCues.lineHasFoldedArea": "off",
+  "audioCues.notebookCellFailed": "off",
+  "audioCues.taskFailed": "off",
+  "audioCues.terminalCommandFailed": "off",
+  "audioCues.chatResponsePending": "off",
+  "audioCues.diffLineDeleted": "off",
+  "audioCues.diffLineInserted": "off",
+  "audioCues.diffLineModified": "off",
+  "audioCues.lineHasBreakpoint": "off",
+  "audioCues.lineHasInlineSuggestion": "off",
+  "audioCues.noInlayHints": "off",
+  "audioCues.notebookCellCompleted": "off",
+  "audioCues.onDebugBreak": "off",
+  "audioCues.taskCompleted": "off",
+  "audioCues.terminalQuickFix": "off",
+  // ------------------------------- GITLENS CONFIG -------------------------------
+  "gitlens.graph.minimap.enabled": false,
+  "gitlens.graph.layout": "editor",
+  "gitlens.graph.minimap.additionalTypes": [
+    "localBranches"
+  ],
+  // ------------------------------- TS CONFIG -------------------------------
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  // ------------------------------- JS CONFIG -------------------------------
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  // ------------------------------- PYTHON CONFIG -------------------------------
+  "[python]": {
+    "editor.formatOnType": true,
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  // ------------------------------- JSON CONFIG -------------------------------
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  // ------------------------------- JSONC CONFIG -------------------------------
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  // ------------------------------- MARKDOWN CONFIG -------------------------------
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  // ------------------------------- DOCKER COMPOSE CONFIG -------------------------------
+  "[dockercompose]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
+  // ------------------------------- FILE EXCLUDE CONFIG -------------------------------
+  "files.exclude": {
+    "**/.git": false,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true
+  },
+  // ------------------------------- COPILOT CONFIG -------------------------------
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": true,
+    "scminput": false
+  },
+  // ------------------------------- JS/TS CONFIG -------------------------------
+  "js/ts.implicitProjectConfig.experimentalDecorators": true,
+  // ------------------------------- GIT CONFIG -------------------------------
+  "git.confirmSync": false,
+  // ------------------------------- WINDOW CONFIG -------------------------------
+  "window.commandCenter": false,
+  // ------------------------------- SECURITY CONFIG -------------------------------
+  "security.workspace.trust.untrustedFiles": "open",
+  // ------------------------------- ERROR LENS CONFIG -------------------------------
+  "errorLens.enabled": true,
+  // ------------------------------- SYMBOLS CONFIG -------------------------------
+  "symbols.hidesExplorerArrows": false,
+  // ------------------------------- UPDATE CONFIG -------------------------------
+  "update.showReleaseNotes": false,
+  // ------------------------------- LIVE SERVER CONFIG -------------------------------
+  "liveServer.settings.donotShowInfoMsg": true
+}
