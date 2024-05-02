@@ -3,10 +3,15 @@
   // GohuFont uni14, Agave, Lilex, ProFont IIx, ProFontWindows
   // 'Monaspace Neon', 'Monaspace Argon', 'Monaspace Xenon', 'Monaspace Radon', 'Monaspace Krypton'
   // ------------------------------- EDITOR CONFIG -------------------------------
-  "editor.fontFamily": "'Monaspace Argon Medium', JetBrainsMono Nerd Font",
-  "editor.fontSize": 14,
-  "editor.lineHeight": 1.7,
-  "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'calt', 'dlig'",
+  // "editor.fontFamily": "'Monaspace Krypton Medium', JetBrainsMono Nerd Font, monospace",
+  // "editor.fontFamily": "Fira Code",
+  // "editor.fontWeight": "500",
+  // "editor.fontSize": 14,
+  // "editor.lineHeight": 1.7,
+  // "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'calt', 'dlig'",
+  "editor.fontFamily": "Dank Mono",
+  "editor.fontSize": 20,
+  "editor.fontLigatures": true,
   "editor.wordWrap": "on",
   "editor.smoothScrolling": true,
   "editor.tabSize": 2,
@@ -16,7 +21,6 @@
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "editor.guides.bracketPairs": true,
   "editor.guides.bracketPairsHorizontal": true,
-  "editor.linkedEditing": true,
   "editor.accessibilitySupport": "on",
   "editor.renderWhitespace": "all",
   "editor.formatOnPaste": true,
@@ -27,16 +31,14 @@
   "editor.renderLineHighlight": "all",
   // ------------------------------- WORKBENCH CONFIG -------------------------------
   "workbench.startupEditor": "none",
-  "workbench.iconTheme": "eq-material-theme-icons-light",
   "workbench.list.smoothScrolling": true,
-  "workbench.productIconTheme": "fluent-icons-fork",
   "workbench.preferredDarkColorTheme": "One Dark Darker",
   "workbench.tree.renderIndentGuides": "always",
   "workbench.sideBar.location": "right",
   "workbench.activityBar.location": "top",
-  "workbench.colorTheme": "One Dark Darker",
+  "workbench.colorTheme": "Min Dark",
   // "workbench.statusBar.visible": false,
-  // "editor.minimap.enabled": false,
+  "editor.minimap.enabled": false,
   "workbench.tree.enableStickyScroll": true,
   "workbench.colorCustomizations": {},
   "workbench.editorAssociations": {
@@ -57,34 +59,18 @@
     ".env": ".env*",
   },
   // ------------------------------- TERMINAL CONFIG -------------------------------
-  "terminal.integrated.fontFamily": "GohuFont uni14 Nerd Font, JetBrainsMono Nerd Font",
+  // "terminal.integrated.fontFamily": "GohuFont uni14 Nerd Font, JetBrainsMono Nerd Font, monospace",
+  // "terminal.integrated.fontWeight": "500",
+  // "terminal.integrated.lineHeight": 1.2,
+  // "terminal.integrated.fontSize": 14,
+  "terminal.integrated.lineHeight": 1.5,
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyleInactive": "line",
-  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontSize": 20,
   "terminal.integrated.defaultProfile.windows": "PowerShell",
   "terminal.integrated.defaultProfile.osx": "zsh",
   "terminal.integrated.defaultProfile.linux": "zsh",
   "terminal.integrated.cursorStyle": "line",
-  "terminal.integrated.env.windows": {},
-  "terminal.integrated.env.linux": {},
-  "terminal.integrated.env.osx": {},
-  // ------------------------------- AUDIOCUES CONFIG -------------------------------
-  "audioCues.lineHasError": "off",
-  "audioCues.lineHasFoldedArea": "off",
-  "audioCues.notebookCellFailed": "off",
-  "audioCues.taskFailed": "off",
-  "audioCues.terminalCommandFailed": "off",
-  "audioCues.chatResponsePending": "off",
-  "audioCues.diffLineDeleted": "off",
-  "audioCues.diffLineInserted": "off",
-  "audioCues.diffLineModified": "off",
-  "audioCues.lineHasBreakpoint": "off",
-  "audioCues.lineHasInlineSuggestion": "off",
-  "audioCues.noInlayHints": "off",
-  "audioCues.notebookCellCompleted": "off",
-  "audioCues.onDebugBreak": "off",
-  "audioCues.taskCompleted": "off",
-  "audioCues.terminalQuickFix": "off",
   // ------------------------------- GITLENS CONFIG -------------------------------
   "gitlens.graph.minimap.enabled": false,
   "gitlens.graph.layout": "editor",
@@ -128,7 +114,7 @@
     "**/.svn": true,
     "**/.hg": true,
     "**/CVS": true,
-    "**/.DS_Store": true,
+    // "**/.DS_Store": true,
     "**/Thumbs.db": true
   },
   // ------------------------------- COPILOT CONFIG -------------------------------
@@ -153,5 +139,78 @@
   // ------------------------------- UPDATE CONFIG -------------------------------
   "update.showReleaseNotes": false,
   // ------------------------------- LIVE SERVER CONFIG -------------------------------
-  "liveServer.settings.donotShowInfoMsg": true
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotVerifyTags": true,
+  // ------------------------------- OTHERS CONFIG -------------------------------
+  "editor.experimental.asyncTokenization": true,
+  "editor.guides.highlightActiveBracketPair": true,
+  "editor.bracketPairColorization.enabled": true,
+  "accessibility.signals.lineHasWarning": {
+    "sound": "off",
+  },
+  "accessibility.signals.lineHasError": {
+    "sound": "off"
+  },
+  "accessibility.signals.lineHasFoldedArea": {
+    "sound": "off"
+  },
+  "accessibility.signals.lineHasBreakpoint": {
+    "sound": "off"
+  },
+  "accessibility.signals.lineHasInlineSuggestion": {
+    "sound": "off"
+  },
+  "accessibility.signals.terminalQuickFix": {
+    "sound": "off"
+  },
+  "accessibility.signals.onDebugBreak": {
+    "sound": "off",
+    "announcement": "off"
+  },
+  "accessibility.signals.noInlayHints": {
+    "sound": "off"
+  },
+  "accessibility.signals.taskCompleted": {
+    "sound": "off"
+  },
+  "accessibility.signals.taskFailed": {
+    "sound": "off"
+  },
+  "accessibility.signals.terminalCommandFailed": {
+    "sound": "off"
+  },
+  "accessibility.signals.notebookCellCompleted": {
+    "sound": "off"
+  },
+  "accessibility.signals.notebookCellFailed": {
+    "sound": "off"
+  },
+  "accessibility.signals.diffLineInserted": {
+    "sound": "off"
+  },
+  "accessibility.signals.diffLineDeleted": {
+    "sound": "off"
+  },
+  "accessibility.signals.diffLineModified": {
+    "sound": "off"
+  },
+  "accessibility.signals.chatResponsePending": {
+    "sound": "off"
+  },
+  "accessibility.signals.sounds.volume": 0,
+  "files.associations": {
+    "*.php": "php"
+  },
+  "editor.tokenColorCustomizations": {
+    "textMateRules": []
+  },
+  "workbench.iconTheme": "bearded-icons",
+  "workbench.productIconTheme": "fluent-icons-fork",
+  "[php]": {
+    "editor.defaultFormatter": "DEVSENSE.phptools-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "mohd-akram.vscode-html-format"
+  },
+  "editor.linkedEditing": true,
 }
