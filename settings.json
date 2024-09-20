@@ -1,16 +1,13 @@
 {
   // JetBrainsMono, CaskaydiaCove, Hasklug, FiraCode, FantasqueSansMono
   // GohuFont uni14, Agave, Lilex, ProFont IIx, ProFontWindows
-  // 'Monaspace Neon', 'Monaspace Argon', 'Monaspace Xenon', 'Monaspace Radon', 'Monaspace Krypton'
+  // 'Monaspace Neon', 'Monaspace Argon', 'Monaspace Xenon', 'Monaspace Radon', 'Monaspace Krypton', Dank Mono
   // ------------------------------- EDITOR CONFIG -------------------------------
-  // "editor.fontFamily": "'Monaspace Krypton Medium', JetBrainsMono Nerd Font, monospace",
-  // "editor.fontFamily": "Fira Code",
-  // "editor.fontWeight": "500",
-  // "editor.fontSize": 14,
-  // "editor.lineHeight": 1.7,
+  "editor.fontFamily": "'FiraCode Nerd Font', monospace",
+  "editor.fontWeight": "500",
+  "editor.fontSize": 13,
+  "editor.lineHeight": 1.5,
   // "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'calt', 'dlig'",
-  "editor.fontFamily": "Dank Mono",
-  "editor.fontSize": 20,
   "editor.fontLigatures": true,
   "editor.wordWrap": "on",
   "editor.smoothScrolling": true,
@@ -22,12 +19,12 @@
   "editor.guides.bracketPairs": true,
   "editor.guides.bracketPairsHorizontal": true,
   "editor.accessibilitySupport": "on",
-  "editor.renderWhitespace": "all",
+  "editor.renderWhitespace": "none",
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.stickyScroll.enabled": true,
   "editor.scrollbar.horizontal": "hidden",
-  "editor.scrollbar.vertical": "hidden",
+  // "editor.scrollbar.vertical": "hidden",
   "editor.renderLineHighlight": "all",
   // ------------------------------- WORKBENCH CONFIG -------------------------------
   "workbench.startupEditor": "none",
@@ -36,14 +33,14 @@
   "workbench.tree.renderIndentGuides": "always",
   "workbench.sideBar.location": "right",
   "workbench.activityBar.location": "top",
-  "workbench.colorTheme": "Min Dark",
   // "workbench.statusBar.visible": false,
-  "editor.minimap.enabled": false,
+  // "editor.minimap.enabled": false,
   "workbench.tree.enableStickyScroll": true,
   "workbench.colorCustomizations": {},
   "workbench.editorAssociations": {
-    "*.pdf": "latex-workshop-pdf-hook",
-    "*.docx": "default"
+    // "*.pdf": "latex-workshop-pdf-hook",
+    "*.docx": "default",
+    "*.png": "editor.excalidraw"
   },
   // ------------------------------- EXPLORER CONFIG -------------------------------
   "explorer.confirmDelete": false,
@@ -56,17 +53,15 @@
     "ace": "ace*",
     "tsconfig.json": "tsconfig*",
     "package.json": "package*, yarn*, pnpm*",
-    ".env": ".env*",
+    ".env": ".env*"
   },
   // ------------------------------- TERMINAL CONFIG -------------------------------
-  // "terminal.integrated.fontFamily": "GohuFont uni14 Nerd Font, JetBrainsMono Nerd Font, monospace",
-  // "terminal.integrated.fontWeight": "500",
-  // "terminal.integrated.lineHeight": 1.2,
-  // "terminal.integrated.fontSize": 14,
-  "terminal.integrated.lineHeight": 1.5,
+  "terminal.integrated.fontFamily": "FiraCode Nerd Font, JetBrainsMono Nerd Font, monospace",
+  "terminal.integrated.fontWeight": "500",
+  "terminal.integrated.lineHeight": 1.2,
+  "terminal.integrated.fontSize": 14,
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyleInactive": "line",
-  "terminal.integrated.fontSize": 20,
   "terminal.integrated.defaultProfile.windows": "PowerShell",
   "terminal.integrated.defaultProfile.osx": "zsh",
   "terminal.integrated.defaultProfile.linux": "zsh",
@@ -74,18 +69,20 @@
   // ------------------------------- GITLENS CONFIG -------------------------------
   "gitlens.graph.minimap.enabled": false,
   "gitlens.graph.layout": "editor",
-  "gitlens.graph.minimap.additionalTypes": [
-    "localBranches"
-  ],
+  "gitlens.graph.minimap.additionalTypes": ["localBranches"],
   // ------------------------------- TS CONFIG -------------------------------
   "typescript.updateImportsOnFileMove.enabled": "always",
   "[typescript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
+    // "editor.defaultFormatter": "vscode.typescript-language-features",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "prettier.semi": false
   },
   // ------------------------------- JS CONFIG -------------------------------
   "javascript.updateImportsOnFileMove.enabled": "always",
   "[javascript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
+    // "editor.defaultFormatter": "vscode.typescript-language-features",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "prettier.semi": false
   },
   // ------------------------------- PYTHON CONFIG -------------------------------
   "[python]": {
@@ -94,15 +91,17 @@
   },
   // ------------------------------- JSON CONFIG -------------------------------
   "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
+    // "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   // ------------------------------- JSONC CONFIG -------------------------------
   "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
+    // "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   // ------------------------------- MARKDOWN CONFIG -------------------------------
   "[markdown]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   // ------------------------------- DOCKER COMPOSE CONFIG -------------------------------
   "[dockercompose]": {
@@ -147,43 +146,54 @@
   "editor.bracketPairColorization.enabled": true,
   "accessibility.signals.lineHasWarning": {
     "sound": "off",
+    "announcement": "off"
   },
   "accessibility.signals.lineHasError": {
-    "sound": "off"
+    "sound": "off",
+    "announcement": "off"
   },
   "accessibility.signals.lineHasFoldedArea": {
-    "sound": "off"
+    "sound": "off",
+    "announcement": "off"
   },
   "accessibility.signals.lineHasBreakpoint": {
-    "sound": "off"
+    "sound": "off",
+    "announcement": "off"
   },
   "accessibility.signals.lineHasInlineSuggestion": {
     "sound": "off"
   },
   "accessibility.signals.terminalQuickFix": {
-    "sound": "off"
+    "sound": "off",
+    "announcement": "off"
   },
   "accessibility.signals.onDebugBreak": {
     "sound": "off",
     "announcement": "off"
   },
   "accessibility.signals.noInlayHints": {
-    "sound": "off"
+    "sound": "off",
+    "announcement": "off"
   },
   "accessibility.signals.taskCompleted": {
-    "sound": "off"
+    "sound": "off",
+    "announcement": "off"
   },
   "accessibility.signals.taskFailed": {
-    "sound": "off"
+    "sound": "off",
+    "announcement": "off"
   },
   "accessibility.signals.terminalCommandFailed": {
-    "sound": "off"
+    "sound": "off",
+    "announcement": "off"
   },
   "accessibility.signals.notebookCellCompleted": {
-    "sound": "off"
+    "sound": "off",
+    "announcement": "off"
   },
   "accessibility.signals.notebookCellFailed": {
-    "sound": "off"
+    "sound": "off",
+    "announcement": "off"
   },
   "accessibility.signals.diffLineInserted": {
     "sound": "off"
@@ -194,18 +204,18 @@
   "accessibility.signals.diffLineModified": {
     "sound": "off"
   },
-  "accessibility.signals.chatResponsePending": {
-    "sound": "off"
+  "accessibility.signals.positionHasError": {
+    "sound": "off",
+    "announcement": "off"
   },
-  "accessibility.signals.sounds.volume": 0,
   "files.associations": {
     "*.php": "php"
   },
   "editor.tokenColorCustomizations": {
     "textMateRules": []
   },
-  "workbench.iconTheme": "bearded-icons",
-  "workbench.productIconTheme": "fluent-icons-fork",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.productIconTheme": "macos-modern",
   "[php]": {
     "editor.defaultFormatter": "DEVSENSE.phptools-vscode"
   },
@@ -213,4 +223,57 @@
     "editor.defaultFormatter": "mohd-akram.vscode-html-format"
   },
   "editor.linkedEditing": true,
+  "accessibility.signals.progress": {
+    "sound": "off",
+    "announcement": "off"
+  },
+  "editor.suggestSelection": "first",
+  "explorer.confirmPasteNative": false,
+  "git.suggestSmartCommit": false,
+  "github.copilot.editor.enableAutoCompletions": true,
+  "accessibility.signals.terminalCommandSucceeded": {
+    "sound": "off",
+    "announcement": "off"
+  },
+  "accessibility.signals.voiceRecordingStarted": {
+    "sound": "off"
+  },
+  "excalidraw.theme": "dark",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.semi": false,
+  "accessibility.signals.chatRequestSent": {
+    "sound": "off",
+    "announcement": "off"
+  },
+  "accessibility.signals.chatResponseReceived": {
+    "sound": "off"
+  },
+  "accessibility.signals.clear": {
+    "announcement": "off",
+    "sound": "off"
+  },
+  "accessibility.signals.positionHasWarning": {
+    "sound": "off",
+    "announcement": "off"
+  },
+  "accessibility.signals.terminalBell": {
+    "sound": "off",
+    "announcement": "off"
+  },
+  "accessibility.signals.voiceRecordingStopped": {
+    "sound": "off"
+  },
+  "workbench.colorTheme": "scepter (darker)",
+  "[nginx]": {
+    "editor.defaultFormatter": "ahmadalli.vscode-nginx-conf"
+  },
+  "[lua]": {
+    "editor.defaultFormatter": "sumneko.lua"
+  },
+  "[sql]": {
+    "editor.defaultFormatter": "mtxr.sqltools"
+  },
+  "[csharp]": {
+    "editor.defaultFormatter": "ms-dotnettools.csharp"
+  }
 }
