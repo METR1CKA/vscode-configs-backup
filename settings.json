@@ -3,15 +3,16 @@
   // GohuFont uni14, Agave, Lilex, ProFont IIx, ProFontWindows
   // 'Monaspace Neon', 'Monaspace Argon', 'Monaspace Xenon', 'Monaspace Radon', 'Monaspace Krypton', Dank Mono
   // ------------------------------- EDITOR CONFIG -------------------------------
-  "editor.fontFamily": "'FiraCode Nerd Font', monospace",
+  "editor.fontFamily": "Dank Mono,'FiraCode Nerd Font', monospace",
   "editor.fontWeight": "500",
-  "editor.fontSize": 13,
-  "editor.lineHeight": 1.5,
+  "editor.fontSize": 15,
+  "editor.lineHeight": 1.6,
+  "editor.letterSpacing": 0.1,
   // "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'calt', 'dlig'",
   "editor.fontLigatures": true,
   "editor.wordWrap": "on",
   "editor.smoothScrolling": true,
-  "editor.tabSize": 2,
+  "editor.tabSize": 4,
   "editor.cursorBlinking": "expand",
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.autoClosingBrackets": "always",
@@ -25,22 +26,21 @@
   "editor.stickyScroll.enabled": true,
   "editor.scrollbar.horizontal": "hidden",
   // "editor.scrollbar.vertical": "hidden",
-  "editor.renderLineHighlight": "all",
+  "editor.renderLineHighlight": "gutter",
   // ------------------------------- WORKBENCH CONFIG -------------------------------
+  "workbench.layoutControl.enabled": false,
   "workbench.startupEditor": "none",
   "workbench.list.smoothScrolling": true,
   "workbench.preferredDarkColorTheme": "One Dark Darker",
   "workbench.tree.renderIndentGuides": "always",
   "workbench.sideBar.location": "right",
   "workbench.activityBar.location": "top",
-  // "workbench.statusBar.visible": false,
-  // "editor.minimap.enabled": false,
+  "workbench.editor.labelFormat": "short",
+  "editor.minimap.enabled": false,
   "workbench.tree.enableStickyScroll": true,
   "workbench.colorCustomizations": {},
   "workbench.editorAssociations": {
-    // "*.pdf": "latex-workshop-pdf-hook",
-    "*.docx": "default",
-    "*.png": "editor.excalidraw"
+    "*.docx": "default"
   },
   // ------------------------------- EXPLORER CONFIG -------------------------------
   "explorer.confirmDelete": false,
@@ -59,7 +59,7 @@
   "terminal.integrated.fontFamily": "FiraCode Nerd Font, JetBrainsMono Nerd Font, monospace",
   "terminal.integrated.fontWeight": "500",
   "terminal.integrated.lineHeight": 1.2,
-  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontSize": 15,
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyleInactive": "line",
   "terminal.integrated.defaultProfile.windows": "PowerShell",
@@ -238,7 +238,6 @@
   "accessibility.signals.voiceRecordingStarted": {
     "sound": "off"
   },
-  "excalidraw.theme": "dark",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "prettier.semi": false,
   "accessibility.signals.chatRequestSent": {
@@ -275,5 +274,45 @@
   },
   "[csharp]": {
     "editor.defaultFormatter": "ms-dotnettools.csharp"
+  },
+  "emmet.includeLanguages": {
+    "edge": "html"
+  },
+  "edge.format.enable": true,
+  "[edge]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[xaml]": {
+    "editor.defaultFormatter": "ms-dotnettools.csharp"
+  },
+  // ------------------------------- CUSTOM CSS & JS CONFIG ------------------------------- //
+  "vscode_custom_css.imports": [
+    "file:///Users/metricka/.vscode/confs/custom-styles.css",
+    "file:///Users/metricka/.vscode/confs/custom-scripts.js"
+  ],
+  // ------------------------------- CUSTOM APC CONFIG ------------------------------- //
+  "apc.electron": {
+    "titleBarStyle": "hiddenInset",
+    "trafficLightPosition": {
+      "x": 11,
+      "y": 10
+    },
+    "frame": false
+  },
+  "apc.header": {
+    "height": 36
+  },
+  "apc.font.family": "FiraCode Nerd Font",
+  "apc.stylesheet": {
+    ".title-label > h2": "display: none",
+    ".editor-actions": "display: none",
+    ".pane-body": "padding: 8px",
+    ".pane-header": "padding: 0 8px",
+    ".split-view-view:first-child .pane-header": "display: none !important",
+    ".monaco-list-row": "border-radius: 4px",
+    ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "display: none"
+  },
+  "apc.listRow": {
+    "height": 24
   }
 }
